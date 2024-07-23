@@ -1,7 +1,8 @@
 export default function returnHowManyArguments(...args) {
-	let arg_count = 0;
-	for (let arg of args) {
-		arg_count++;
-	}
-	return arg_count;
+  let argCount = 0;
+  // eslint-disable-next-line no-unused-vars
+  for (const _ of args) {
+    argCount += 1;
+  }
+  return argCount;
 }
