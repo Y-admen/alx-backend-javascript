@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-export function handleResponseFromAPI(promise) {
+export default function handleResponseFromAPI(promise) {
   promise
     .then((response) => {
       console.log('Got a response from the API');

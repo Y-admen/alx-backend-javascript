@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
-function getFullResponseFromAPI(success) {
+export default function getFullResponseFromAPI(success) {
   return new Promise((resolve, reject) => {
-    if (success === true) {
+    if (success) {
       const status = {
         status: 200,
         body: 'Success',
