@@ -7,7 +7,7 @@ export default function handleResponseFromAPI(promise) {
         status: 200,
         body: 'Success',
       };
-      return status
+      return status;
     })
     .catch(() => new Error());
 }
