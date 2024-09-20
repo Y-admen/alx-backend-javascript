@@ -11,7 +11,7 @@ function countStudents(path) {
       const stidents = lines.splice(1);
       const numOfStudent = stidents.length;
 
-      console.log(`Number of students: ${numOfStudent}`);
+      let output = `Number of students: ${numOfStudent}\n`;
 
       const fields = {};
       stidents.forEach((student) => {
@@ -23,10 +23,11 @@ function countStudents(path) {
       });
 
       for (const [field, names] of Object.entries(fields)) {
-        console.log(`Number of students in ${field}: ${names.length}. List: ${names.join(', ')}`);
+        output += `Number of students in ${field}: ${names.length}. List: ${names.join(', ')}\n`;
       }
+      console.log(output.trim());
 
-      resolve();
+      resolve(output.trim());
     });
   });
 }
